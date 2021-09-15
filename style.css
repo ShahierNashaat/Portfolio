@@ -38,7 +38,8 @@ main .head {
   flex-direction: column;
 }
 
-main .head h2, main .head h1 {
+main .head h2,
+main .head h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
