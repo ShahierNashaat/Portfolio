@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div a{
+    text-decoration: none;
+    color: black;
+}
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("header-illsutration-mobile@2x.png");
+    height: 726px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main .head {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main .head h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+}
+main .head h2:first-child {
+    color: #172B4D;
+    margin-bottom: 10px;
+}
+main .head h2:nth-child(2){
+    color: #36B37E;
+    margin-top: 0;
+}
+main .head div{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 58px 0px;
+}
+main .icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .icons a{
+    text-decoration: none;
+    color: #505F79;
+    margin: 0 15px;
+}
+main .icons a i{
+    width: 19.99px;
+    height: 19.96px;
+}
