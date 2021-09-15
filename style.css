@@ -3,19 +3,19 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
 
-nav div {
+header nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav div a {
+header a {
   text-decoration: none;
   color: black;
 }
@@ -38,7 +38,7 @@ main .head {
   flex-direction: column;
 }
 
-main .head h2 {
+main .head h2, main .head h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -56,7 +56,7 @@ main .head h2:nth-child(2) {
   margin-top: 0;
 }
 
-main .head div {
+main .head p {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -69,6 +69,8 @@ main .icons {
   width: 100%;
   display: flex;
   justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 main .icons a {
