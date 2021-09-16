@@ -24,6 +24,9 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.headline {
   background-image: url("header-illsutration-mobile@2x.png");
   height: 726px;
   background-size: cover;
@@ -31,15 +34,15 @@ main {
   background-position: center;
 }
 
-main .head {
+.headline .head {
   margin-top: 40px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-main .head h2,
-main .head h1 {
+.headline .head h2,
+.headline .head h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -47,17 +50,17 @@ main .head h1 {
   text-align: center;
 }
 
-main .head h2:first-child {
+.headline .head h2:first-child {
   color: #172b4d;
   margin-bottom: 10px;
 }
 
-main .head h2:nth-child(2) {
+.headline .head h2:nth-child(2) {
   color: #36b37e;
   margin-top: 0;
 }
 
-main .head p {
+.headline .head p {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -66,7 +69,7 @@ main .head p {
   margin: 58px 0;
 }
 
-main .icons {
+.headline .icons {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -74,13 +77,198 @@ main .icons {
   padding-left: 0;
 }
 
-main .icons a {
+.headline .icons a {
   text-decoration: none;
   color: #505f79;
   margin: 0 15px;
 }
 
-main .icons a i {
+.headline .icons a i {
   width: 19.99px;
   height: 19.96px;
+}
+
+.work,
+.about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work .recent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.work .recent .circle {
+  border: 1px solid #dfe1e6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.work .recent .down-arrow {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 37%;
+  left: 40%;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #acb7c3;
+  border-bottom: 2px solid #acb7c3;
+}
+
+.work .recent h1,
+.about-me .text-block h1 {
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 24px 0;
+  color: #172b4d;
+  width: 100%;
+  height: 97px;
+}
+
+.work .recent .green-line {
+  background: #36b37e;
+  border-radius: 24px;
+  width: 48px;
+  height: 4px;
+  margin: 24px 0;
+}
+
+.work .cards,
+.about-me .cards {
+  width: 100%;
+  display: grid;
+  grid-row-gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+  grid-template-columns: 90%;
+}
+
+.work .cards .card,
+.about-me .cards .card {
+  width: 100%;
+  height: 474px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.work .cards .card img {
+  width: 100%;
+  height: 50%;
+}
+
+.about-me .text-block,
+.work .cards .card .text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work .cards .card .text-block h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a4a42;
+  margin: 16px 0;
+  width: 295px;
+  height: 57px;
+}
+
+.about-me .cards .card ul,
+.work .cards .card .text-block ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.about-me .cards .card ul li,
+.work .cards .card .text-block ul li {
+  margin: 0 8px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.about-me .text-block a,
+.work .cards .card .text-block a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.about-me .text-block {
+  height: 389.38px;
+  width: 100%;
+  background-image: url("illustration- about me- mobile.png"), url("illustration 1- about me-mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right top;
+  background-size: contain, auto;
+  margin-top: 10px;
+}
+
+.about-me .text-block h1 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me .text-block p {
+  margin-top: 10px;
+  color: #42526e;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.about-me .cards {
+  margin-top: 50px;
+}
+
+.about-me .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  height: 352px;
+}
+
+.about-me .cards .card img {
+  height: auto;
+}
+
+.about-me .cards .card h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  margin: 24px 0;
+}
+
+.about-me .cards .card ul li {
+  margin-top: 10px;
 }
