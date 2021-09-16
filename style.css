@@ -165,10 +165,27 @@ main {
   height: 50%;
 }
 
+.about-me .text-block {
+  height: 389.38px;
+  width: 100%;
+  background-image: url("illustration- about me- mobile.png"), url("illustration 1- about me-mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right top;
+  background-size: contain, auto;
+  margin-top: 10px;
+}
+
 .about-me .text-block,
 .work .cards .card .text-block {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.about-me .text-block h1 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -190,6 +207,10 @@ main {
   justify-content: center;
   list-style-type: none;
   flex-wrap: wrap;
+}
+
+.about-me .cards .card ul li {
+  margin-top: 10px;
 }
 
 .about-me .cards .card ul li,
@@ -215,23 +236,6 @@ main {
   border-radius: 4px;
   color: #fff;
   margin-top: 15px;
-}
-
-.about-me .text-block {
-  height: 389.38px;
-  width: 100%;
-  background-image: url("illustration- about me- mobile.png"), url("illustration 1- about me-mobile.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left top, right top;
-  background-size: contain, auto;
-  margin-top: 10px;
-}
-
-.about-me .text-block h1 {
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .about-me .text-block p {
@@ -267,8 +271,4 @@ main {
   line-height: 32px;
   color: #344563;
   margin: 24px 0;
-}
-
-.about-me .cards .card ul li {
-  margin-top: 10px;
 }
