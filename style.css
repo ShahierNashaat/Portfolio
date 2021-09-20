@@ -203,10 +203,10 @@ main {
 .about-me .cards .card ul,
 .work .cards .card .text-block ul {
   padding-left: 0;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   list-style-type: none;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .about-me .cards .card ul li {
@@ -223,6 +223,7 @@ main {
   font-size: 12px;
   line-height: 16px;
   color: #3a4a42;
+  float: left;
 }
 
 .about-me .text-block a,
