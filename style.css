@@ -41,6 +41,18 @@ main {
   flex-direction: column;
 }
 
+.contact-form h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 327px;
+}
+
 .headline .head h2,
 .headline .head h1 {
   font-style: normal;
@@ -81,6 +93,10 @@ main {
   text-decoration: none;
   color: #505f79;
   margin: 0 15px;
+}
+
+.contact-form .links i {
+  color: #505f79;
 }
 
 .headline .icons a i {
@@ -200,6 +216,12 @@ main {
   height: 57px;
 }
 
+.contact-form form ul {
+  list-style-type: none;
+  padding-left: 0;
+  width: 90%;
+}
+
 .about-me .cards .card ul,
 .work .cards .card .text-block ul {
   padding-left: 0;
@@ -271,4 +293,109 @@ main {
   line-height: 32px;
   color: #344563;
   margin: 24px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url("images/Frame.png");
+  background-position: right 78%;
+  background-repeat: no-repeat;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.contact-form form ul input,
+.contact-form form ul textarea {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.contact-form form ul input {
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6b778c;
+}
+
+.contact-form form ul textarea {
+  background: #fff;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.contact-form form button {
+  padding: 12px;
+  position: static;
+  width: 131px;
+  height: 48px;
+  left: 98px;
+  top: calc(50% - 48px / 2 + 141px);
+  background: #36b37f;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-form form button:hover {
+  background-color: #2b855f;
+}
+
+.contact-form .links {
+  width: 50%;
+}
+
+.contact-form .links .icons {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form .end-line {
+  margin-bottom: 20px;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
+}
+
+.contact-form .my-email {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  width: 375px;
+  height: 189px;
 }
