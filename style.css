@@ -237,7 +237,7 @@ main {
 
 .about-me .cards .card ul li,
 .work .cards .card .text-block ul li {
-  margin: 0 8px;
+  margin: 4px 8px;
   background: #ebf0ee;
   border-radius: 4px;
   padding: 8px 8px;
