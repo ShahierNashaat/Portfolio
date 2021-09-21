@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" crossorigin="use-credentials">
 </head>
 <body>
     <header>
@@ -179,6 +179,39 @@
                 </div>
             </div>
         </section>
+        <section class="contact-form">
+            <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+            <form action="https://formspree.io/f/mjvjlpvw"    method="post">
+                <ul>
+                    <li>
+                       
+                        <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="20" required>
+                    </li>
+                    <li>
+                       
+                       <input type="email" id="mail" name="user_email" placeholder="Email addresss" required>
+                   </li>
+                   <li>
+                       
+                      <textarea name="user_msg" id="msg" cols="30" rows="10" placeholder="Enter text here" maxlength="500" required></textarea>
+                   </li>
+                </ul>
+                <button type="submit" >Get in touch</button>
+            </form>
+               <div class="links">
+                <ul class="icons">
+                  <li class="icons-list"><a href="#"><i class="fab fa-angellist"></i></a></li>
+                  <li class="icons-list"> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li class="icons-list"> <a href="#"><i class="fab fa-github"></i></a></li>
+                  <li class="icons-list"> <a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  <li class="icons-list"> <a href="#"><i class="fab fa-medium"></i></a></li>
+               </ul>
+                 
+               </div> 
+               <div class="my-email">shahiernashaat97@gmail.com
+            </div>
+               <div class="end-line"></div>
+            </Section>
     </main>
 </body>
 </html>
