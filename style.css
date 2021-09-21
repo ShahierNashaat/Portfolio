@@ -27,7 +27,7 @@ main {
 }
 
 .headline {
-  background-image: url("header-illsutration-mobile@2x.png");
+  background-image: url("images/header-illsutration-mobile@2x.png");
   height: 726px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ main {
 .about-me .text-block {
   height: 389.38px;
   width: 100%;
-  background-image: url("illustration- about me- mobile.png"), url("illustration 1- about me-mobile.png");
+  background-image: url("images/illustration- about me- mobile.png"), url("images/illustration 1- about me-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right top;
   background-size: contain, auto;
