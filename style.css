@@ -88,7 +88,7 @@ main {
   text-align: center;
   margin: 30px 0;
   width: 80%;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .headline .icons {
@@ -242,6 +242,12 @@ main {
   flex-wrap: wrap;
 }
 
+.about-me .cards .card ul li {
+  margin-top: 10px;
+  background-color: white;
+  color: #36b37e;
+}
+
 .about-me .cards .card ul li,
 .work .cards .card .text-block ul li {
   margin: 4px 8px;
@@ -252,12 +258,6 @@ main {
   font-size: 12px;
   line-height: 16px;
   color: #3a4a42;
-}
-
-.about-me .cards .card ul li {
-  margin-top: 10px;
-  background-color: white;
-  color: #36B37E;
 }
 
 .about-me .text-block a,
@@ -295,7 +295,7 @@ main {
   align-items: center;
   padding-top: 10px;
   height: 352px;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
 }
 
 .about-me .cards .card img {
@@ -416,7 +416,7 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
-  .work .cards, 
+  .work .cards,
   .about-me .cards {
     grid-template-columns: repeat(2, 45%);
     grid-column-gap: 20px;
@@ -490,7 +490,7 @@ main {
     display: none;
   }
 
-  .work .cards, 
+  .work .cards,
   .about-me .cards {
     grid-template-columns: repeat(3, 30%);
   }
@@ -542,7 +542,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 1200px) { 
+@media only screen and (min-width: 1200px) {
   .headline .circle {
     margin-top: 55px;
   }
@@ -551,7 +551,7 @@ main {
     margin-top: 200px;
   }
 
-  .work .cards, 
+  .work .cards,
   .about-me .cards {
     width: 85%;
   }
