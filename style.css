@@ -244,19 +244,24 @@ main {
 
 .about-me .cards .card ul li {
   margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
   background-color: white;
   color: #36b37e;
 }
 
 .about-me .cards .card ul li,
 .work .cards .card .text-block ul li {
-  margin: 4px 8px;
-  background: #ebf0ee;
   border-radius: 4px;
   padding: 8px 8px;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+}
+
+.work .cards .card .text-block ul li {
+  margin: 4px 8px;
+  background: #ebf0ee;
   color: #3a4a42;
 }
 
