@@ -4,7 +4,7 @@
 
 > Portfolio project to show my skills, my projects and my experience.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/app_screenshot.png)
 
 ## Built With
 
