@@ -191,12 +191,31 @@ main {
   grid-template-columns: 90%;
 }
 
+.work .cards .card {
+  transition-property: margin-top, box-shadow;
+  transition-duration: 0.5s;
+}
+
 .work .cards .card,
 .about-me .cards .card {
   width: 100%;
   height: 570px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+}
+
+.about-me .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  height: 352px;
+  background-color: #ebf0ee;
+}
+
+.work .cards .card:hover {
+  margin-top: -10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .work .cards .card img {
@@ -316,15 +335,6 @@ main {
   to {
     margin-top: 50px;
   }
-}
-
-.about-me .cards .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-  height: 352px;
-  background-color: #ebf0ee;
 }
 
 .about-me .cards .card img {
