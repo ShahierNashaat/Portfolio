@@ -43,10 +43,22 @@ main {
 }
 
 .headline .head {
-  margin-top: 40px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  animation-name: grow-height;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow-height {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: 40px;
+  }
 }
 
 .contact-form h2 {
@@ -291,7 +303,19 @@ main {
 }
 
 .about-me .cards {
-  margin-top: 50px;
+  animation-name: go-down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes go-down {
+  form {
+    margin-top: 30px;
+  }
+
+  to {
+    margin-top: 50px;
+  }
 }
 
 .about-me .cards .card {
