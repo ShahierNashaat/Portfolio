@@ -82,6 +82,26 @@ main {
   text-align: center;
 }
 
+.work .recent h2,
+.about-me .text-block h2 {
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 24px 0;
+  color: #172b4d;
+  width: 90%;
+  height: 97px;
+}
+
+.about-me .text-block h2 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .headline .head h2:first-child {
   color: #172b4d;
   margin-bottom: 10px;
@@ -160,19 +180,6 @@ main {
   flex-direction: column;
 }
 
-.work .recent h1,
-.about-me .text-block h1 {
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  margin: 24px 0;
-  color: #172b4d;
-  width: 90%;
-  height: 97px;
-}
-
 .work .recent .green-line {
   background: #36b37e;
   border-radius: 24px;
@@ -193,7 +200,7 @@ main {
 
 .work .cards .card {
   transition-property: margin-top, box-shadow;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
 .work .cards .card,
@@ -240,14 +247,7 @@ main {
   align-items: center;
 }
 
-.about-me .text-block h1 {
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.work .cards .card .text-block h1 {
+.work .cards .card .text-block h2 {
   text-align: center;
   font-weight: 600;
   font-size: 24px;
@@ -296,17 +296,55 @@ main {
   color: #3a4a42;
 }
 
-.about-me .text-block a,
+.about-me .text-block a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background-color: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.about-me .text-block a:hover {
+  background-color: #2b855f;
+}
+
 .work .cards .card .text-block a {
   text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  background: #36b37f;
+  background-color: #36b37f;
   border-radius: 4px;
   color: #fff;
   margin-top: 15px;
+}
+
+.contact-form form button {
+  padding: 12px;
+  position: static;
+  width: 131px;
+  height: 48px;
+  left: 98px;
+  top: calc(50% - 48px / 2 + 141px);
+  background: #36b37f;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.work .cards .card .text-block a:hover,
+.contact-form form button:hover {
+  background-color: #2b855f;
 }
 
 .about-me .text-block p {
@@ -400,28 +438,6 @@ main {
   color: #091e42;
 }
 
-.contact-form form button {
-  padding: 12px;
-  position: static;
-  width: 131px;
-  height: 48px;
-  left: 98px;
-  top: calc(50% - 48px / 2 + 141px);
-  background: #36b37f;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  border: 0;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.contact-form form button:hover {
-  background-color: #2b855f;
-}
-
 .contact-form .links {
   width: 50%;
 }
@@ -504,24 +520,30 @@ main {
   }
 
   .headline {
-    background: none !important;
+    background: none;
   }
 
   .headline h1,
   .headline h2 {
-    margin: 15px 0 !important;
+    margin: 15px 0;
   }
 
-  .headline p {
-    width: 60% !important;
-    margin: 15px 0 !important;
+  .headline .head p {
+    width: 60%;
+    margin: 15px 0;
   }
 
   .headline .circle {
     margin-top: 30px;
   }
 
-  .work .recent h1 {
+  .contact-form h2 {
+    width: 30%;
+    margin-right: 2%;
+    font-size: 30px;
+  }
+
+  .work .recent h2 {
     width: 100%;
   }
 
@@ -558,12 +580,6 @@ main {
     background-image: url("images/Frame@2x.png"), url("images/Frame@2x2.png"), url("images/illustration-2-contact-form-desktop@2x.png");
     background-position: right 78%, left bottom, 20% 80%;
     background-size: 20%;
-  }
-
-  .contact-form h2 {
-    width: 30%;
-    margin-right: 2%;
-    font-size: 30px;
   }
 
   .contact-form form {
