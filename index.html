@@ -16,11 +16,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shahier Nashaat - Portfolio</title>
     <script src="https://kit.fontawesome.com/a3ad5bee92.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" crossorigin="use-credentials">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -31,11 +32,27 @@
         <nav class="mobile-version">
             <a href="#"><i class="fas fa-bars fa-2x"></i></a>
         </nav>
+        <div class="mobile-menu display-none">
+            <div class="close">
+                <a href="#">x</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
         <nav class="desktop-version">
             <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -63,7 +80,7 @@
             </div>
         </section>
 
-        <section class="work">
+        <section id="portfolio" class="work">
             <div class="recent">
                 <h2>My Recent Works</h2>
                 <div class="green-line"></div>
@@ -155,7 +172,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-me">
+        <section id="about" class="about-me">
             <div class="text-block">
                 <h2>About me</h2>
                 <p> I can help you build a product ,
@@ -200,7 +217,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-form">
+        <section id="contact" class="contact-form">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             <form action="https://formspree.io/f/xvodlvkj" method="post">
                 <ul>
