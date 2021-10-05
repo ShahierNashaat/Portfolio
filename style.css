@@ -724,7 +724,7 @@ main {
     height: 80%;
     background-color: #fff;
     position: relative;
-    padding-top: 25px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -734,14 +734,22 @@ main {
 
   .work .desktop-project-popup-window .details-card .close-popup-window {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;
     text-decoration: none;
     color: #67798e;
+    background: #C1C7D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 25px;
   }
 
   .work .desktop-project-popup-window .details-card img {
-    width: 90%;
+    width: 95%;
     height: 60%;
     border-radius: 8px;
   }
@@ -749,7 +757,7 @@ main {
   .work .desktop-project-popup-window .details-card .title-and-buttons {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
   }
 
   .work .desktop-project-popup-window .details-card .title-and-buttons h3 {
@@ -798,7 +806,7 @@ main {
   }
 
   .work .desktop-project-popup-window .details-card ul {
-    width: 90%;
+    width: 95%;
     list-style-type: none;
     padding-left: 0;
     display: flex;
@@ -820,7 +828,7 @@ main {
   }
 
   .work .desktop-project-popup-window .details-card .description {
-    width: 90%;
+    width: 95%;
     color: #344563;
     font-style: normal;
     font-weight: normal;
