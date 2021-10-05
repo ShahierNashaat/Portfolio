@@ -1,20 +1,20 @@
-const hamburger = document.querySelector('.mobile-version');
-const menu = document.querySelector('.mobile-menu');
+const hamburger = document.querySelector('header .mobile-version a');
+const mobileMenu = document.querySelector('header .mobile-menu');
 
 hamburger.addEventListener('click', () => {
-  menu.classList.remove('display-none');
+  mobileMenu.classList.remove('display-none');
 });
 
-const cross = document.querySelector('header .mobile-menu .close a');
+const closeMobileMenu = document.querySelector('header .mobile-menu .close a');
 
-cross.addEventListener('click', () => {
-  menu.classList.add('display-none');
+closeMobileMenu.addEventListener('click', () => {
+  mobileMenu.classList.add('display-none');
 });
 
-const links = document.querySelectorAll('header .mobile-menu ul li a');
+const MobileMenuLinks = document.querySelectorAll('header .mobile-menu ul li a');
 
-for (let i = 0; i < links.length; i += 1) {
-  links[i].addEventListener('click', () => {
-    menu.classList.add('display-none');
+for (let i = 0; i < MobileMenuLinks.length; i += 1) {
+  MobileMenuLinks[i].addEventListener('click', () => {
+    mobileMenu.classList.add('display-none');
   });
 }

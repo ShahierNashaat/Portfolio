@@ -10,6 +10,12 @@ header {
   position: relative;
 }
 
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header .mobile-version {
   display: flex;
   justify-content: center;
@@ -20,9 +26,12 @@ header .mobile-menu {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  margin-left: -10px;
-  margin-top: -10px;
+  top: 0;
+  left: 0;
   background-color: white;
+  transition-property: margin-left;
+  transition-duration: 1s;
+  z-index: 3;
 }
 
 header .mobile-menu .close {
@@ -72,7 +81,7 @@ header .mobile-menu ul {
 }
 
 .display-none {
-  display: none;
+  margin-left: 100vw;
 }
 
 header .desktop-version {
