@@ -623,6 +623,10 @@ main {
   height: 189px;
 }
 
+.work .desktop-display-none {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .work .cards,
   .about-me .cards {
@@ -701,10 +705,6 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .work .desktop-display-none {
-    display: none;
-  }
-
   .desktop-project-popup-window {
     width: 100vw;
     height: 100vh;
@@ -715,8 +715,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: display;
-    transition-duration: 1s;
   }
 
   .work .desktop-project-popup-window .details-card {
@@ -738,7 +736,7 @@ main {
     right: 20px;
     text-decoration: none;
     color: #67798e;
-    background: #C1C7D0;
+    background: #c1c7d0;
     display: flex;
     justify-content: center;
     align-items: center;
