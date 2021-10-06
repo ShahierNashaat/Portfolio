@@ -492,6 +492,11 @@ main {
   margin-top: 15px;
 }
 
+.contact-form form .error {
+  color: red;
+  padding-bottom: 15px;
+}
+
 .contact-form form button {
   padding: 12px;
   position: static;
