@@ -127,3 +127,38 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
     }
   });
 }
+
+function showMessage(input, message, type) {
+	const msg = input.parentNode.querySelector("small");
+	msg.innerText = message;
+	input.className = type ? "success" : "error";
+	return type;
+}
+
+function showError(input, message) {
+	return showMessage(input, message, false);
+}
+
+function validateEmail(input, lowercaseMsg) {
+	var i=0;
+  var character='';
+  while (i <= input.value.length){
+    character = input.value.charAt(i);
+    if (!isNaN(character * 1)){
+      if (character != character.toLowerCase()){
+        return showError(input, lowercaseMsg);
+      }
+    }
+    i++;
+  }
+}
+
+const form = document.forms[0];
+const email = form.elements['email'];
+const EMAIL_LowerCase = "Please enter your email in lowercase";
+
+form.addEventListener('submit', (event)=>{
+  if(!validateEmail(email,EMAIL_LowerCase)){
+    event.preventDefault();
+  }
+});
