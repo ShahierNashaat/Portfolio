@@ -649,6 +649,18 @@ main {
     background-repeat: no-repeat;
   }
 
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: rgb(202, 202, 202); 
+    border-radius: 20px;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+
   header .mobile-version,
   header .logo,
   .contact-form .my-email,
@@ -728,6 +740,18 @@ main {
     align-items: center;
     overflow-y: auto;
     border-radius: 8px;
+  }
+
+  .work .desktop-project-popup-window .details-card::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .work .desktop-project-popup-window .details-card::-webkit-scrollbar-thumb {
+    background: rgb(202, 202, 202); 
+    border-radius: 20px;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
   }
 
   .work .desktop-project-popup-window .details-card .close-popup-window {
