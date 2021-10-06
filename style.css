@@ -654,7 +654,7 @@ main {
   }
 
   body::-webkit-scrollbar-thumb {
-    background: rgb(202, 202, 202); 
+    background: rgb(202, 202, 202);
     border-radius: 20px;
     border-right: 2px solid white;
     border-top: 2px solid white;
@@ -747,7 +747,7 @@ main {
   }
 
   .work .desktop-project-popup-window .details-card::-webkit-scrollbar-thumb {
-    background: rgb(202, 202, 202); 
+    background: rgb(202, 202, 202);
     border-radius: 20px;
     border-right: 2px solid white;
     border-top: 2px solid white;
