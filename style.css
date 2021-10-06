@@ -259,11 +259,18 @@ main {
 
 .work .mobile-project-popup-window .details-card .close-popup-window {
   position: absolute;
-  top: 30px;
-  right: 11%;
+  top: 35px;
+  right: 8%;
   text-decoration: none;
   font-size: 30px;
   color: #67798e;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work .mobile-project-popup-window .details-card img {
@@ -377,7 +384,7 @@ main {
 .work .mobile-project-popup-window .details-card .buttons {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 90%;
   margin: 10px 0 20px;
 }
 
@@ -389,7 +396,7 @@ main {
   background: #36b37f;
   border-radius: 4px;
   text-decoration: none;
-  width: 158px;
+  width: 48%;
   height: 48px;
   display: flex;
   justify-content: center;
@@ -402,7 +409,7 @@ main {
 }
 
 .work .mobile-project-popup-window .details-card .buttons a i {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .work .recent {
