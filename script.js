@@ -165,26 +165,26 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-function createLocalStorageFormData() {
-  let formData = {
-    name: fullName.value,
-    email: email.value,
-    message: msg.value,
-  }
-  let stringFormData = JSON.stringify(formData);
-  localStorage.setItem('formDate', stringFormData);
-  setFormData();
-}
-
 function setFormData() {
-  let stringFormData = localStorage.getItem('formDate');
-  let formData = JSON.parse(stringFormData);
+  const stringFormData = localStorage.getItem('formDate');
+  const formData = JSON.parse(stringFormData);
   fullName.value = formData.name;
   email.value = formData.email;
   msg.value = formData.message;
 }
 
-if(!localStorage.getItem('formDate')) {
+function createLocalStorageFormData() {
+  const formData = {
+    name: fullName.value,
+    email: email.value,
+    message: msg.value,
+  };
+  const stringFormData = JSON.stringify(formData);
+  localStorage.setItem('formDate', stringFormData);
+  setFormData();
+}
+
+if (!localStorage.getItem('formDate')) {
   createLocalStorageFormData();
 } else {
   setFormData();
@@ -192,7 +192,7 @@ if(!localStorage.getItem('formDate')) {
 
 fullName.addEventListener('blur', () => {
   let stringFormData = localStorage.getItem('formDate');
-  let formData = JSON.parse(stringFormData);
+  const formData = JSON.parse(stringFormData);
   formData.name = fullName.value;
   stringFormData = JSON.stringify(formData);
   localStorage.setItem('formDate', stringFormData);
@@ -200,7 +200,7 @@ fullName.addEventListener('blur', () => {
 
 email.addEventListener('blur', () => {
   let stringFormData = localStorage.getItem('formDate');
-  let formData = JSON.parse(stringFormData);
+  const formData = JSON.parse(stringFormData);
   formData.email = email.value;
   stringFormData = JSON.stringify(formData);
   localStorage.setItem('formDate', stringFormData);
@@ -208,7 +208,7 @@ email.addEventListener('blur', () => {
 
 msg.addEventListener('blur', () => {
   let stringFormData = localStorage.getItem('formDate');
-  let formData = JSON.parse(stringFormData);
+  const formData = JSON.parse(stringFormData);
   formData.message = msg.value;
   stringFormData = JSON.stringify(formData);
   localStorage.setItem('formDate', stringFormData);
