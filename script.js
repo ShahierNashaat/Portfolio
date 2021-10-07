@@ -190,3 +190,26 @@ if(!localStorage.getItem('formDate')) {
   setFormData();
 }
 
+fullName.addEventListener('blur', () => {
+  let stringFormData = localStorage.getItem('formDate');
+  let formData = JSON.parse(stringFormData);
+  formData.name = fullName.value;
+  let stringFormData = JSON.stringify(formData);
+  localStorage.setItem('formDate', stringFormData);
+});
+
+email.addEventListener('blur', () => {
+  let stringFormData = localStorage.getItem('formDate');
+  let formData = JSON.parse(stringFormData);
+  formData.email = email.value;
+  let stringFormData = JSON.stringify(formData);
+  localStorage.setItem('formDate', stringFormData);
+});
+
+msg.addEventListener('blur', () => {
+  let stringFormData = localStorage.getItem('formDate');
+  let formData = JSON.parse(stringFormData);
+  formData.message = msg.value;
+  let stringFormData = JSON.stringify(formData);
+  localStorage.setItem('formDate', stringFormData);
+});
