@@ -153,7 +153,10 @@ function validateEmail(input, lowercaseMsg) {
 }
 
 const form = document.forms[0];
+const fullName = form.elements.user_name;
 const email = form.elements.user_email;
+const msg = form.elements.user_msg;
+
 const EmailLowerCase = 'Please enter your email in lowercase';
 
 form.addEventListener('submit', (event) => {
@@ -161,3 +164,29 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+function createLocalStorageFormData() {
+  let formData = {
+    name: fullName.value,
+    email: email.value,
+    message: msg.value,
+  }
+  let stringFormData = JSON.stringify(formData);
+  localStorage.setItem('formDate', stringFormData);
+  setFormData();
+}
+
+function setFormData() {
+  let stringFormData = localStorage.getItem('formDate');
+  let formData = JSON.parse(stringFormData);
+  fullName.value = formData.name;
+  email.value = formData.email;
+  msg.value = formData.message;
+}
+
+if(!localStorage.getItem('formDate')) {
+  createLocalStorageFormData();
+} else {
+  setFormData();
+}
+
