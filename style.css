@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -14,6 +18,7 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }
 
 header .mobile-version {
@@ -38,6 +43,8 @@ header .mobile-menu .close {
   display: flex;
   justify-content: end;
   padding: 20px;
+  color: #67798e;
+  font-size: 30px;
 }
 
 header a {
@@ -69,11 +76,6 @@ header .mobile-menu ul li a {
   border-radius: 4px;
   color: #fff;
   margin-top: 15px;
-}
-
-header .mobile-menu .close a {
-  color: #67798e;
-  font-size: 30px;
 }
 
 header .mobile-menu ul {
@@ -437,7 +439,7 @@ main {
 }
 
 .work .cards .card {
-  transition-property: margin-top, box-shadow;
+  transition-property: margin-top, box-shadow, margin-bottom;
   transition-duration: 0.2s;
 }
 
@@ -480,23 +482,6 @@ main {
   color: #3a4a42;
 }
 
-.work .cards .card .text-block a {
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  background-color: #36b37f;
-  border-radius: 4px;
-  color: #fff;
-  margin-top: 15px;
-}
-
-.contact-form form .error {
-  color: red;
-  padding-bottom: 15px;
-}
-
 .contact-form form button {
   padding: 12px;
   position: static;
@@ -515,9 +500,30 @@ main {
   cursor: pointer;
 }
 
-.work .cards .card .text-block a:hover,
 .contact-form form button:hover {
   background-color: #2b855f;
+}
+
+.work .cards .card .text-block button {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background-color: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 15px;
+  border: 0;
+}
+
+.work .cards .card .text-block button:hover {
+  background-color: #2b855f;
+}
+
+.contact-form form .error {
+  color: red;
+  padding-bottom: 15px;
 }
 
 .about-me .text-block p {
@@ -536,15 +542,16 @@ main {
   animation-name: go-down;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-play-state: paused;
 }
 
 @keyframes go-down {
   form {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   to {
-    margin-top: 50px;
+    margin-top: 60px;
   }
 }
 
@@ -726,6 +733,7 @@ main {
 
   .work .cards .card:hover {
     margin-top: -10px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -783,8 +791,8 @@ main {
   }
 
   .work .desktop-project-popup-window .details-card img {
-    width: 95%;
-    height: 60%;
+    width: auto;
+    height: 400px;
     border-radius: 8px;
   }
 
