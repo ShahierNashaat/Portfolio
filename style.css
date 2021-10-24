@@ -35,7 +35,7 @@ header .mobile-menu {
   left: 0;
   background-color: white;
   transition-property: margin-left;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   z-index: 3;
 }
 
@@ -273,6 +273,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .work .mobile-project-popup-window .details-card img {
@@ -788,6 +789,7 @@ main {
     height: 30px;
     border-radius: 8px;
     font-size: 25px;
+    cursor: pointer;
   }
 
   .work .desktop-project-popup-window .details-card img {
