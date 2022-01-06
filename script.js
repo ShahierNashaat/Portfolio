@@ -18,6 +18,7 @@ const MobileMenuLinks = document.querySelectorAll('header .mobile-menu ul li a')
 for (let i = 0; i < MobileMenuLinks.length; i += 1) {
   MobileMenuLinks[i].addEventListener('click', () => {
     mobileMenu.classList.add('display-none');
+    document.querySelector('body').style.overflow = 'scroll';
   });
 }
 
