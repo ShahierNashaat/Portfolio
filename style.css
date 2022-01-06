@@ -53,6 +53,7 @@ header a {
 }
 
 header .mobile-menu ul li a {
+  user-select: none;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -283,11 +284,10 @@ main {
 }
 
 .about-me .text-block {
-  height: 389.38px;
   width: 100%;
   background-image: url("images/illustration- about me- mobile.png"), url("images/illustration 1- about me-mobile.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: left top, right top;
+  background-position: left bottom, right -20px;
   background-size: contain, auto;
   margin-top: 10px;
 }
@@ -541,14 +541,14 @@ main {
 
 .about-me .cards {
   animation-name: go-down;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-play-state: paused;
 }
 
 @keyframes go-down {
   form {
-    margin-top: 40px;
+    margin-top: 45px;
   }
 
   to {
@@ -900,8 +900,8 @@ main {
 
   .about-me .text-block {
     background-image: url("images/illustration-about-me-2-desktop@2x.png"), url("images/Frame-desktop.png");
-    background-position: left 200px, right top;
-    background-size: 20%, auto;
+    background-position: left bottom, right top;
+    background-size: 18%, auto;
   }
 
   .about-me .text-block p {

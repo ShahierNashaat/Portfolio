@@ -3,12 +3,14 @@ const mobileMenu = document.querySelector('header .mobile-menu');
 
 hamburger.addEventListener('click', () => {
   mobileMenu.classList.remove('display-none');
+  document.querySelector('body').style.overflow = 'hidden';
 });
 
 const closeMobileMenu = document.querySelector('header .mobile-menu .close');
 
 closeMobileMenu.addEventListener('click', () => {
   mobileMenu.classList.add('display-none');
+  document.querySelector('body').style.overflow = 'scroll';
 });
 
 const MobileMenuLinks = document.querySelectorAll('header .mobile-menu ul li a');
@@ -21,9 +23,33 @@ for (let i = 0; i < MobileMenuLinks.length; i += 1) {
 
 const projectsArr = [
   {
+    name: 'COVID Cases',
+    description: 'The project for completing the react module in microverse, the project is about displaying the updated data about covid cases in all the countries and in its regions if it was available.',
+    featuredImage: 'https://raw.githubusercontent.com/ShahierNashaat/react-capstone/development/src/images/thumb_nail.png',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'ES6', 'React', 'Redux'],
+    linkToLive: 'https://covid-cases-shahier.herokuapp.com/',
+    linkToSource: 'https://github.com/ShahierNashaat/react-capstone',
+  },
+  {
+    name: 'Space Travelers Hub',
+    description: 'In this project, we have built a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    featuredImage: 'https://raw.githubusercontent.com/Taher-web-dev/Space-Travelers-Hub/dev/src/assets/images/overview_animated.gif',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'ES6', 'React', 'Redux'],
+    linkToLive: 'https://space-hub-taher.netlify.app/',
+    linkToSource: 'https://github.com/Taher-web-dev/Space-Travelers-Hub',
+  },
+  {
+    name: 'Movie Time',
+    description: 'The project is for completing the JavaScript module in microverse, the project is about displaying a list of movies that you can like or write a comment to one of them.',
+    featuredImage: 'https://raw.githubusercontent.com/ShahierNashaat/javascript-capstone/development/images/app_screenshot.png',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'ES6', 'Webpack', 'Jest'],
+    linkToLive: 'https://shahiernashaat.github.io/javascript-capstone/',
+    linkToSource: 'https://github.com/ShahierNashaat/javascript-capstone',
+  },
+  {
     name: 'Complete Course Drawing Academy',
-    description: 'The project is about academy that teach drawing, the website is cosisted of home and about pages and also responsive.',
-    featuredImage: 'images/complete-course-academy.png',
+    description: 'The project for HTML5 & CSS3 module in microverse. The project is about an e-learning website for drawing it contains of the home and about pages.',
+    featuredImage: 'https://raw.githubusercontent.com/ShahierNashaat/html-css-capstone/master/images/app_screenshot.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLive: 'https://shahiernashaat.github.io/module1-capstone/',
     linkToSource: 'https://github.com/ShahierNashaat/module1-capstone',
@@ -88,6 +114,7 @@ for (let i = 0; i < projectsArr.length; i += 1) {
       mobileProjectPopupWindow.classList.remove('display-none');
       mobileProjectPopupWindowCloseBtn.addEventListener('click', () => {
         mobileProjectPopupWindow.classList.add('display-none');
+        document.querySelector('body').style.overflow = 'scroll';
       });
     } else {
       const desktopProjectPopupWindow = document.querySelector('.desktop-project-popup-window');
@@ -113,8 +140,10 @@ for (let i = 0; i < projectsArr.length; i += 1) {
       desktopProjectPopupWindow.classList.remove('desktop-display-none');
       desktopProjectPopupWindowCloseBtn.addEventListener('click', () => {
         desktopProjectPopupWindow.classList.add('desktop-display-none');
+        document.querySelector('body').style.overflow = 'scroll';
       });
     }
+    document.querySelector('body').style.overflow = 'hidden';
   });
 }
 
@@ -206,7 +235,7 @@ msg.addEventListener('blur', () => {
 
 window.addEventListener('scroll', () => {
   const aboutMeCards = document.querySelector('.about-me .cards');
-  const aboutMeCardsPosition = aboutMeCards.offsetTop - 500;
+  const aboutMeCardsPosition = aboutMeCards.offsetTop - 900;
   const topOfWindow = window.scrollY;
 
   if (aboutMeCardsPosition <= topOfWindow) {
