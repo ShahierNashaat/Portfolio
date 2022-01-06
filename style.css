@@ -107,15 +107,15 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  animation-name: grow-height;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .headline .head {
   display: flex;
   align-items: center;
   flex-direction: column;
-  animation-name: grow-height;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 @keyframes grow-height {
@@ -140,13 +140,18 @@ main {
   width: 90%;
 }
 
-.headline .head h2,
-.headline .head h1 {
+.headline .head h3,
+.headline h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
+}
+
+.headline h2 {
+  color: #172b4d;
+  margin-bottom: 10px;
 }
 
 .work .recent h2,
@@ -169,12 +174,7 @@ main {
   align-items: center;
 }
 
-.headline .head h2:first-child {
-  color: #172b4d;
-  margin-bottom: 10px;
-}
-
-.headline .head h2:nth-child(2) {
+.headline .head h3 {
   color: #36b37e;
   margin-top: 0;
 }
@@ -712,8 +712,8 @@ main {
     background: none;
   }
 
-  .headline h1,
-  .headline h2 {
+  .headline h2,
+  .headline h3 {
     margin: 15px 0;
   }
 
