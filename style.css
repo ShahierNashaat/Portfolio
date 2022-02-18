@@ -900,7 +900,7 @@ main {
 
   .about-me .text-block {
     background-image: url("images/illustration-about-me-2-desktop@2x.png"), url("images/Frame-desktop.png");
-    background-position: left bottom, right top;
+    background-position: left 107%, right top;
     background-size: 18%, auto;
   }
 
