@@ -52,8 +52,8 @@ const projectsArr = [
     description: 'The project for HTML5 & CSS3 module in microverse. The project is about an e-learning website for drawing it contains of the home and about pages.',
     featuredImage: 'https://raw.githubusercontent.com/ShahierNashaat/html-css-capstone/master/images/app_screenshot.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    linkToLive: 'https://github.com/ShahierNashaat/html-css-capstone/',
-    linkToSource: 'https://shahiernashaat.github.io/html-css-capstone/',
+    linkToLive: 'https://shahiernashaat.github.io/html-css-capstone/',
+    linkToSource: 'https://github.com/ShahierNashaat/html-css-capstone/',
   },
 ];
 
