@@ -24,6 +24,14 @@ for (let i = 0; i < MobileMenuLinks.length; i += 1) {
 
 const projectsArr = [
   {
+    name: 'Budget App',
+    description: 'The project is a website that you can create budget categories in it and the transactions for those categories.',
+    featuredImage: 'https://raw.githubusercontent.com/ShahierNashaat/budget-app/dev/app/assets/images/Screenshot.png',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Ruby on Rails'],
+    linkToLive: 'https://vast-gorge-07833.herokuapp.com/',
+    linkToSource: 'https://github.com/ShahierNashaat/budget-app',
+  },
+  {
     name: 'COVID Cases',
     description: 'The project for completing the react module in microverse, the project is about displaying the updated data about covid cases in all the countries and in its regions if it was available.',
     featuredImage: 'https://raw.githubusercontent.com/ShahierNashaat/react-capstone/development/src/images/thumb_nail.png',
