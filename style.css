@@ -243,11 +243,12 @@ main {
   width: 100vw;
   height: 100vh;
   padding: 20px 16px;
+  box-sizing: border-box;
 }
 
 .work .mobile-project-popup-window .details-card {
   background-color: #fff;
-  width: calc(100% - 32px);
+  width: calc(100vw - 32px);
   height: calc(100vh - 40px);
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
@@ -258,6 +259,7 @@ main {
   padding-top: 20px;
   position: relative;
   overflow-y: scroll;
+  box-sizing: border-box;
 }
 
 .work .mobile-project-popup-window .details-card .close-popup-window {
