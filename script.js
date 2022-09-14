@@ -33,10 +33,10 @@ const projectsArr = [
   },
   {
     name: 'COVID Cases',
-    description: 'The project for completing the react module in microverse, the project is about displaying the updated data about covid cases in all the countries and in its regions if it was available.',
+    description: 'This is a website that displaying an updated data about COVID cases in every country and showes the detailed information in each country.',
     featuredImage: 'https://raw.githubusercontent.com/ShahierNashaat/react-capstone/development/src/images/thumb_nail.png',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'ES6', 'React', 'Redux'],
-    linkToLive: 'https://covid-cases-shahier.herokuapp.com/',
+    linkToLive: 'https://comfy-speculoos-4b255f.netlify.app/',
     linkToSource: 'https://github.com/ShahierNashaat/react-capstone',
   },
   {
