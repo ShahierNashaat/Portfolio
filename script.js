@@ -44,8 +44,8 @@ const projectsArr = [
     description: 'In this project, we have built a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
     featuredImage: 'https://raw.githubusercontent.com/Taher-web-dev/Space-Travelers-Hub/dev/src/assets/images/overview_animated.gif',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'ES6', 'React', 'Redux'],
-    linkToLive: 'https://space-hub-taher.netlify.app/',
-    linkToSource: 'https://github.com/Taher-web-dev/Space-Travelers-Hub',
+    linkToLive: 'https://shahiernashaat.github.io/Space-Travelers-Hub/',
+    linkToSource: 'https://github.com/ShahierNashaat/Space-Travelers-Hub',
   },
   {
     name: 'Movie Time',
