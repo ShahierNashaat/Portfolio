@@ -242,14 +242,14 @@ main {
   background-color: #c1c7d0;
   width: 100vw;
   height: 100vh;
-  padding: 20px 16px;
+  padding: 30px 16px;
   box-sizing: border-box;
 }
 
 .work .mobile-project-popup-window .details-card {
   background-color: #fff;
   width: calc(100vw - 32px);
-  height: calc(100vh - 40px);
+  height: calc(100vh - 60px);
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
