@@ -1,0 +1,154 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px 5%;
+  align-items: center;
+  background-color: #0b1224;
+  border-bottom: 1px solid black;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header button {
+  background-color: rgb(114 226 174/var(--tw-bg-opacity));
+
+  --tw-bg-opacity: 0.1;
+
+  border: 0;
+  border-radius: 0.25rem;
+  color: #72e2ae;
+  padding: 10px 15px;
+}
+
+header button.open-menu:hover,
+header button.close-menu:hover {
+  background-color: white;
+  color: black;
+}
+
+header .home-link {
+  color: #72e2ae;
+  font-size: 7.5vw;
+  font-weight: bold;
+  border: 0;
+  background-color: transparent;
+}
+
+header .dot {
+  color: white;
+}
+
+header .menu {
+  position: fixed;
+  background-color: #0f172a;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+header .menu .open-menu,
+header .menu .close-menu {
+  position: absolute;
+  right: 5%;
+  top: 10px;
+}
+
+header .menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header .menu ul li {
+  text-align: center;
+}
+
+header .menu ul li button {
+  color: white;
+  cursor: default;
+  background-color: transparent;
+  font-size: 7vw;
+  border: 0;
+}
+
+header .menu ul li button span {
+  color: #72e2ae;
+}
+
+header .menu ul li button:hover {
+  text-decoration: line-through;
+  text-decoration-color: #72e2ae;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  animation: animate-header 1s;
+}
+
+@keyframes animate-header {
+  0% { top: -72px; }
+  100% { top: 0; }
+}
+
+@media only screen and (min-width: 768px) {
+  .open-menu,
+  .close-menu {
+    display: none;
+  }
+
+  header .home-link {
+    font-size: 4vw;
+  }
+
+  header .menu {
+    position: unset;
+    width: fit-content;
+    height: 100%;
+    background: transparent;
+  }
+
+  header .menu ul {
+    flex-direction: row;
+  }
+
+  header .menu ul li button {
+    font-size: 1.5vw;
+    padding: 0;
+  }
+
+  header .menu ul li button:hover {
+    text-decoration: underline;
+    text-decoration-color: #72e2ae;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header .home-link {
+    font-size: 3vw;
+    cursor: pointer;
+  }
+
+  header .menu ul li {
+    padding: 0 10px;
+  }
+
+  header .menu ul li button {
+    font-size: 1vw;
+    cursor: pointer;
+  }
+}

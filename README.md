@@ -4,17 +4,16 @@
 
 > Portfolio project to show my skills, my projects and my experience.
 
-![screenshot](./images/app_screenshot.png)
+![screenshot](./public/images/app_screenshot.png)
 
 ## Built With
 
-- HTML
-- CSS
-- Javascript
+- HTML5, CSS3, and ES6
+- ReactJS
 
 ## Live Demo
 
-[Live Demo Link](https://shahiernashaat.github.io/Portfolio/)
+[Live Demo Link](https://shahiernashaat.me/)
 
 ## Getting Started
 
@@ -23,7 +22,8 @@ To get a local copy up and running follow these simple example steps.
 - Click the green Code button on the repo.
 - Copy the project url
 - In your local PC, open your terminal in the folder you would like to clone the project.
-- type "git clone (project-url)"
+- type "git clone https://github.com/ShahierNashaat/Portfolio.git"
+- run "npm install" and then "npm start"
 
 
 
@@ -31,9 +31,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Shahier Nashaat**
 
-- GitHub: [@githubhandle](https://github.com/ShahierNashaat)
-- Twitter: [@twitterhandle](https://twitter.com/ShahierN)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shahier-nashaat-73519313a/)
+- GitHub: [ShahierNashaat](https://github.com/ShahierNashaat)
+- Twitter: [@ShahierN](https://twitter.com/ShahierN)
+- LinkedIn: [shahier-nashaat](https://www.linkedin.com/in/shahier-nashaat/)
 
 ## Show your support
 
