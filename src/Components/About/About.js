@@ -1,6 +1,20 @@
 import './About.css';
 
 function About() {
+  const downloadResume = () => {
+    fetch('Shahier Nashaat Resume.pdf').then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        const alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'Shahier Nashaat Resume.pdf';
+        alink.click();
+      });
+    });
+  };
+
   return (
     <div className="about" id="about">
       <div className="title">
@@ -42,6 +56,9 @@ function About() {
           In my spare time, I like to watch movies, series,
           and youtube videos for gamers and I also like to draw in my spare time.
         </p>
+      </div>
+      <div className="download-resume">
+        <button type="button" className="download-resume-btn" onClick={downloadResume}><span>DOWNLOAD RESUME</span></button>
       </div>
     </div>
   );

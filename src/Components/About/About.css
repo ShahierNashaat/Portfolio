@@ -53,6 +53,43 @@
   padding: 0 5%;
 }
 
+.about .download-resume {
+  margin-top: 20px;
+  background-color: #72e2ae;
+}
+
+.about .download-resume .download-resume-btn {
+  background-color: transparent;
+  padding: 15px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  border-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.about .download-resume .download-resume-btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.about .download-resume .download-resume-btn:hover::before {
+  height: 100%;
+}
+
+.about .download-resume .download-resume-btn span {
+  position: relative;
+  z-index: 2;
+}
+
 @media only screen and (min-width: 768px) {
   .about .title h2 {
     font-size: 35px;
