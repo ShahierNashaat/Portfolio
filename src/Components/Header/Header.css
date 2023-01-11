@@ -96,6 +96,7 @@ header .menu ul li button:hover {
   position: fixed;
   width: 100%;
   left: 0;
+  top: 0;
   z-index: 1;
   animation: animate-header 1s;
 }

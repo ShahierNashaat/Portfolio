@@ -11,8 +11,10 @@ function Header() {
       const topOfWindow = window.scrollY;
       if (topOfWindow >= aboutOffsetTop - 300 && headerRef.current.className !== 'fixed') {
         headerRef.current.className = 'fixed';
+        document.body.style.marginTop = '92px';
       } else if (topOfWindow < aboutOffsetTop - 300) {
         headerRef.current.className = '';
+        document.body.style.marginTop = '0';
       }
     });
   }, []);
@@ -35,9 +37,9 @@ function Header() {
     const rightPlaceOffsetTop = document.querySelector(`#${id}`).offsetTop;
     const headerHeight = headerRef.current.offsetHeight;
     if (headerRef.current.className === 'fixed') {
-      window.scrollTo(0, rightPlaceOffsetTop - headerHeight - 20);
+      window.scrollTo(0, rightPlaceOffsetTop - headerHeight);
     } else {
-      window.scrollTo(0, rightPlaceOffsetTop - headerHeight - 100);
+      window.scrollTo(0, rightPlaceOffsetTop - headerHeight);
     }
   };
 

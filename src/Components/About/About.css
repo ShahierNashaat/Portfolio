@@ -1,3 +1,64 @@
-.test {
-  background-color: white;
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.about .title h2 {
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 35px 0 0;
+}
+
+.about .title .underline {
+  width: 70%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #203b40;
+  position: relative;
+  z-index: -1;
+}
+
+.about .title .underline .animation {
+  width: 5%;
+  height: 5px;
+  background-color: #72e2ae;
+  position: absolute;
+  top: 0;
+  animation: left-right 2s infinite;
+  border-radius: 5px;
+}
+
+@keyframes left-right {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 95%;
+  }
+}
+
+.about .description p {
+  text-align: center;
+  color: #888999;
+  padding: 0 5%;
+}
+
+@media only screen and (min-width: 768px) {
+  .about .title h2 {
+    font-size: 35px;
+  }
+
+  .about .description p {
+    font-size: 20px;
+  }
 }

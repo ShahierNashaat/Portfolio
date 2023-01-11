@@ -7,7 +7,7 @@ function Headline() {
   const scrollToAbout = () => {
     const about = document.querySelector('#about');
     const headerHeight = document.querySelector('header').offsetHeight;
-    window.scrollTo(0, about.offsetTop - headerHeight - 100);
+    window.scrollTo(0, about.offsetTop - headerHeight);
   };
 
   useEffect(() => {
