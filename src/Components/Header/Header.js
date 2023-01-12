@@ -61,42 +61,42 @@ function Header() {
             <button onClick={() => { closeMenu(); scrollToTheRightPart('about'); }} type="button">
               <span>01.</span>
               {' '}
-              About
+              ABOUT
             </button>
           </li>
           <li>
             <button onClick={() => { closeMenu(); scrollToTheRightPart('skills'); }} type="button">
               <span>02.</span>
               {' '}
-              Skills
+              SKILLS
             </button>
           </li>
           <li>
             <button onClick={() => { closeMenu(); scrollToTheRightPart('experience'); }} type="button">
               <span>03.</span>
               {' '}
-              Experience
+              EXPERIENCE
             </button>
           </li>
           <li>
             <button onClick={() => { closeMenu(); scrollToTheRightPart('work'); }} type="button">
               <span>04.</span>
               {' '}
-              Work
+              WORK
             </button>
           </li>
           <li>
             <button onClick={() => { closeMenu(); scrollToTheRightPart('recommendation'); }} type="button">
               <span>05.</span>
               {' '}
-              Recommendation
+              RECOMMENDATION
             </button>
           </li>
           <li>
             <button onClick={() => { closeMenu(); scrollToTheRightPart('contact'); }} type="button">
               <span>06.</span>
               {' '}
-              Contact
+              CONTACT
             </button>
           </li>
         </ul>

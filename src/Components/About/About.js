@@ -53,8 +53,8 @@ function About() {
           I&apos;m the sort of person who does DSA problems for fun.
         </p>
         <p>
-          In my spare time, I like to watch movies, series,
-          and youtube videos for gamers and I also like to draw in my spare time.
+          In my spare time, I like to watch movies, series, youtube videos,
+          and play video games, I also like to draw in my spare time.
         </p>
       </div>
       <div className="download-resume">

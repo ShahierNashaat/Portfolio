@@ -1,6 +1,6 @@
 .headline {
   width: 100%;
-  min-height: calc(100vh - 67px);
+  height: calc(100vh - 92px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,7 +171,7 @@
 
 .headline .scroll-down {
   position: absolute;
-  bottom: 3.9vh;
+  bottom: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -213,7 +213,7 @@
 
 @media only screen and (min-width: 540px) {
   .headline .scroll-down {
-    bottom: 5vh;
+    bottom: 20px;
   }
 
   .headline p {
@@ -228,6 +228,7 @@
 
   .headline {
     height: calc(100vh - 89px);
+    min-height: 700px;
   }
 
   .headline h1 {
@@ -251,6 +252,6 @@
   }
 
   .headline .scroll-down {
-    bottom: 8vh;
+    bottom: 70px;
   }
 }
