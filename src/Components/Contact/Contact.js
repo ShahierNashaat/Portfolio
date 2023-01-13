@@ -2,8 +2,13 @@ import './Contact.css';
 
 function Contact() {
   return (
-    <div id="contact">
-      <p>Contact</p>
+    <div className="contact" id="contact">
+      <div className="title">
+        <h2>CONTACT ME</h2>
+        <span className="underline">
+          <span className="animation" />
+        </span>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,55 @@
-.test {
-  background-color: white;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact .title h2 {
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 35px 0 0;
+}
+
+.contact .title .underline {
+  width: 70%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #203b40;
+  position: relative;
+  z-index: -1;
+}
+
+.contact .title .underline .animation {
+  width: 5%;
+  height: 5px;
+  background-color: #72e2ae;
+  position: absolute;
+  top: 0;
+  animation: left-right 2s infinite;
+  border-radius: 5px;
+}
+
+@keyframes left-right {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 95%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact .title h2 {
+    font-size: 35px;
+  }
 }

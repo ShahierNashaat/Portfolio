@@ -61,6 +61,10 @@ function Skills() {
               <span>ReactJS</span>
             </li>
             <li>
+              <img src="/images/Angular.png" alt="Angular" />
+              <span>Angular</span>
+            </li>
+            <li>
               <img src="/images/Ruby_On_Rails.png" alt="Ruby on Rails" />
               <span>Ruby on Rails</span>
             </li>
@@ -83,6 +87,14 @@ function Skills() {
           </div>
           <ul className="icons">
             <li>
+              <img src="/images/terminal.png" alt="Terminal" />
+              <span>Terminal</span>
+            </li>
+            <li>
+              <img src="/images/Git.png" alt="Git" />
+              <span>Git</span>
+            </li>
+            <li>
               <img src="/images/github.png" alt="GitHub" />
               <span>GitHub</span>
             </li>
@@ -93,10 +105,6 @@ function Skills() {
             <li>
               <img src="/images/rspec.png" alt="Rspec" />
               <span>Rspec</span>
-            </li>
-            <li>
-              <img src="/images/terminal.png" alt="Terminal" />
-              <span>Terminal</span>
             </li>
           </ul>
         </div>

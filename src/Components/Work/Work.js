@@ -2,8 +2,13 @@ import './Work.css';
 
 function Work() {
   return (
-    <div id="work">
-      <p>Work</p>
+    <div className="work" id="work">
+      <div className="title">
+        <h2>MY WORK</h2>
+        <span className="underline">
+          <span className="animation" />
+        </span>
+      </div>
     </div>
   );
 }
