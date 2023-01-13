@@ -228,7 +228,7 @@
 
   .headline {
     height: calc(100vh - 89px);
-    min-height: 700px;
+    min-height: 800px;
   }
 
   .headline h1 {
