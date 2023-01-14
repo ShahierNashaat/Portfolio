@@ -31,6 +31,10 @@ function Skills() {
               <span>JavaScript</span>
             </li>
             <li>
+              <img src="/images/typescript.svg" alt="TypeScript" />
+              <span>TypeScript</span>
+            </li>
+            <li>
               <img src="/images/Ruby_logo.png" alt="Ruby" />
               <span>Ruby</span>
             </li>
@@ -41,6 +45,14 @@ function Skills() {
             <li>
               <img src="/images/php.png" alt="PHP" />
               <span>PHP</span>
+            </li>
+            <li>
+              <img src="/images/C++.png" alt="C++" />
+              <span>C++</span>
+            </li>
+            <li>
+              <img src="/images/java.png" alt="Java" />
+              <span>Java</span>
             </li>
           </ul>
         </div>
