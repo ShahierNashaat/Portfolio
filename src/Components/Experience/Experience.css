@@ -48,8 +48,204 @@
   }
 }
 
+.experience .description {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience .description .educational-qualification,
+.experience .description .working-experience {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+}
+
+.experience .description .educational-qualification .title,
+.experience .description .working-experience .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.experience .description .educational-qualification .title img,
+.experience .description .working-experience .title img {
+  width: 10%;
+}
+
+.experience .description .educational-qualification .title h3,
+.experience .description .working-experience .title h3 {
+  color: white;
+  margin: 0;
+}
+
+.experience .description .educational-qualification .education-item,
+.experience .description .working-experience .work-item {
+  margin: 30px 0;
+  padding-left: 20%;
+  position: relative;
+}
+
+.experience .description .educational-qualification .education-item .duration span,
+.experience .description .working-experience .work-item .duration span {
+  background-color: #162033;
+  border-radius: 20px;
+  color: #9fa1b4;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+.experience .description .educational-qualification .education-item .shapes,
+.experience .description .working-experience .work-item .shapes {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.experience .description .educational-qualification .education-item .shapes .circle,
+.experience .description .working-experience .work-item .shapes .circle {
+  border: 4px solid #767886;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.experience .description .educational-qualification .education-item .shapes .right-line,
+.experience .description .working-experience .work-item .shapes .right-line {
+  position: absolute;
+  width: calc(75% - 20px);
+  border: 2px solid #767886;
+  left: 25px;
+  top: 11px;
+}
+
+.experience .description .educational-qualification .education-item .shapes .down-line,
+.experience .description .working-experience .work-item .shapes .down-line {
+  position: absolute;
+  border: 2px solid #767886;
+  left: 12px;
+  top: 25px;
+  height: calc(100% - 20px);
+}
+
+.experience .description .educational-qualification .education-item .content h4,
+.experience .description .working-experience .work-item .content h4 {
+  color: #72e2ae;
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+.experience .description .educational-qualification .education-item .content h5,
+.experience .description .working-experience .work-item .content h5 {
+  color: white;
+  margin: 15px 0;
+  font-size: 0.93em;
+}
+
+.experience .description .educational-qualification .education-item .content p,
+.experience .description .working-experience .work-item .content p {
+  color: #9fa1b4;
+}
+
 @media only screen and (min-width: 768px) {
+  .experience .description .educational-qualification .title img,
+  .experience .description .working-experience .title img {
+    width: 5%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   .experience .title h2 {
     font-size: 35px;
+  }
+
+  .experience .description {
+    flex-direction: row;
+  }
+
+  .experience .description .educational-qualification .title,
+  .experience .description .working-experience .title {
+    padding-left: 5%;
+  }
+
+  .experience .description .educational-qualification .education-item,
+  .experience .description .working-experience .work-item {
+    display: flex;
+    gap: 5%;
+    margin-top: 45px;
+    position: unset;
+    padding: 0;
+  }
+
+  .experience .description .educational-qualification .education-item .duration,
+  .experience .description .working-experience .work-item .duration {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    height: max-content;
+    order: 1;
+  }
+
+  .experience .description .educational-qualification .education-item .content,
+  .experience .description .working-experience .work-item .content {
+    width: 75%;
+    order: 3;
+  }
+
+  .experience .description .educational-qualification .education-item .content h4,
+  .experience .description .working-experience .work-item .content h4 {
+    margin-top: 0;
+  }
+
+  .experience .description .educational-qualification .education-item .shapes,
+  .experience .description .working-experience .work-item .shapes {
+    order: 2;
+    position: unset;
+    height: unset;
+  }
+
+  .experience .description .educational-qualification .education-item .shapes .inner-shape,
+  .experience .description .working-experience .work-item .shapes .inner-shape {
+    position: relative;
+    height: 100%;
+  }
+
+  .experience .description .educational-qualification .education-item .shapes .circle,
+  .experience .description .working-experience .work-item .shapes .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 0;
+  }
+
+  .experience .description .educational-qualification .education-item .shapes .right-line,
+  .experience .description .working-experience .work-item .shapes .right-line {
+    position: absolute;
+    width: 50%;
+    border: 2px solid #767886;
+    left: calc(50% + 17px);
+    top: 11px;
+  }
+
+  .experience .description .educational-qualification .education-item .shapes .left-line,
+  .experience .description .working-experience .work-item .shapes .left-line {
+    position: absolute;
+    width: 50%;
+    border: 2px solid #767886;
+    right: calc(50% + 9px);
+    top: 11px;
+  }
+
+  .experience .description .educational-qualification .education-item .shapes .down-line,
+  .experience .description .working-experience .work-item .shapes .down-line {
+    position: absolute;
+    border: 2px solid #767886;
+    left: calc(50% + 2px);
+    top: 25px;
   }
 }

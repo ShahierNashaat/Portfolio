@@ -1,0 +1,23 @@
+[
+    {
+        "job_title": "Technical Support Engineer",
+        "company": "Microverse",
+        "start_year": "May 2022",
+        "end_year": "Dec 2022",
+        "description": "In this position, I reviewed the code of Microverse students' projects to help them improve their code experience and to help them create professional projects. I have gained many experiences in this job like communication skills, also skills in Github."
+    },
+    {
+        "job_title": "Web Developer",
+        "company": "APEX GAMES",
+        "start_year": "Oct 2022",
+        "end_year": "Dec 2022",
+        "description": "I worked as a full-stack developer at Apex Games which is a company that makes games and cryptocurrency. I built the company's website which made me gain more experience in the steps for building a website working with a team on a real project, also on the technical side I gain more experience in ReactJS."
+    },
+    {
+        "job_title": "Back End Developer",
+        "company": "CRESSOFT CONSULTANCY LIMITED",
+        "start_year": "Nov 2022",
+        "end_year": "Present",
+        "description": "I am working on an E-Commerce project this will give an experience in this business like online payments, how the products are saved, how to develop the customer ordering process, and finally the login integration like enabling the user to log in with his google account."
+    }
+]

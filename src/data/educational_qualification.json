@@ -1,0 +1,23 @@
+[
+    {
+        "field": "Bachelor's degree Computer Science",
+        "name": "Assiut University",
+        "start_year": 2015,
+        "end_year": 2019,
+        "description": "In college, I have gained experience being punctual, studying hard, and delivering projects within their deadlines."
+    },
+    {
+        "field": "Computer Science Diploma",
+        "name": "Information Technology Institute (ITI)",
+        "start_year": "Oct 2020",
+        "end_year": "Jul 2021",
+        "description": "In this diploma, I have gained experience in data structure, algorithms, professional web development, working with different teams, and working on big-scale projects."
+    },
+    {
+        "field": "Web Development",
+        "name": "Microverse",
+        "start_year": "Sep 2021",
+        "end_year": "Apr 2022",
+        "description": "In this online school, I have gained experience in working remotely, working with different people from around the world, and working with industry-standard gitflow."
+    }
+]
