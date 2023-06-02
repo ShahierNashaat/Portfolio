@@ -92,6 +92,9 @@
   color: black;
   width: 19px;
   height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work .work-cards .work-card h3 {

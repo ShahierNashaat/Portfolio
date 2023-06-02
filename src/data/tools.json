@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Terminal",
+        "image": "/images/terminal.png"
+    },
+    {
+        "name": "Git",
+        "image": "/images/Git.png"
+    },
+    {
+        "name": "GitHub",
+        "image": "/images/github.png"
+    },
+    {
+        "name": "GitLab",
+        "image": "/images/gitlab.png"
+    },
+    {
+        "name": "Rspec",
+        "image": "/images/rspec.png"
+    }
+]

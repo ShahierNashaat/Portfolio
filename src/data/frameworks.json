@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Bootstrap",
+        "image": "/images/Bootstrap.png"
+    },
+    {
+        "name": "ReactJS",
+        "image": "/images/React.png"
+    },
+    {
+        "name": "Angular",
+        "image": "/images/Angular.png"
+    },
+    {
+        "name": "Ruby on Rails",
+        "image": "/images/Ruby_On_Rails.png"
+    },
+    {
+        "name": ".Net Core",
+        "image": "/images/NET_Core.png"
+    },
+    {
+        "name": "Laravel",
+        "image": "/images/Laravel.png"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "HTML5",
+        "image": "/images/html.png"
+    },
+    {
+        "name": "CSS3",
+        "image": "/images/css.svg"
+    },
+    {
+        "name": "JavaScript",
+        "image": "/images/JavaScript-logo.png"
+    },
+    {
+        "name": "TypeScript",
+        "image": "/images/typescript.svg"
+    },
+    {
+        "name": "Ruby",
+        "image": "/images/Ruby_logo.png"
+    },
+    {
+        "name": "C#",
+        "image": "/images/C-Sharp.png"
+    },
+    {
+        "name": "PHP",
+        "image": "/images/php.png"
+    },
+    {
+        "name": "C++",
+        "image": "/images/C++.png"
+    },
+    {
+        "name": "Java",
+        "image": "/images/java.png"
+    }
+]
