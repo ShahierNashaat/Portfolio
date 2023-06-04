@@ -24,6 +24,7 @@ function Recommendation() {
   useEffect(() => {
     updateHeight();
     window.addEventListener('resize', updateHeight);
+    recommendationCards.current.classList.add('smooth-scroll');
   }, []);
 
   const mouseDown = (e) => {
@@ -45,7 +46,9 @@ function Recommendation() {
     e.preventDefault();
     const x = e.pageX - recommendationCards.current.offsetLeft;
     const walk = x - startX;
+    recommendationCards.current.classList.remove('smooth-scroll');
     recommendationCards.current.scrollLeft = scrollLeft - walk;
+    recommendationCards.current.classList.add('smooth-scroll');
   };
 
   const extraMovingSpace = () => {
