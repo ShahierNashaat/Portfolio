@@ -83,8 +83,8 @@
   box-sizing: border-box;
   outline: none;
   border: 1px solid #8a8b8d;
-  background-color: #161F32;
-  color: #BFBECB;
+  background-color: #161f32;
+  color: #bfbecb;
 }
 
 .contact .contact-form label input:focus {
@@ -97,8 +97,8 @@
   padding: 10px;
   box-sizing: border-box;
   outline: none;
-  background-color: #161F32;
-  color: #BFBECB;
+  background-color: #161f32;
+  color: #bfbecb;
 }
 
 .contact .contact-form label textarea:focus {
@@ -115,7 +115,9 @@
 
 .contact .contact-form .success-msg {
   background-color: #172835;
+
   --tw-text-opacity: 1;
+
   color: rgb(34 197 94/var(--tw-text-opacity));
   font-weight: 500;
   text-align: center;
@@ -126,7 +128,7 @@
 
 .contact .line {
   width: 90%;
-  border-top: 0.5px solid #BFBECB;
+  border-top: 0.5px solid #bfbecb;
   margin: 50px 0 0;
 }
 
