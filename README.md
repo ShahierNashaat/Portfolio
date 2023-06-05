@@ -41,6 +41,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to [Bieber](https://preview.themeforest.net/item/bieber-react-personal-portfolio-template/full_screen_preview/39171447?_ga=2.48754918.1998316698.1666042766-449665378.1666042766&_gac=1.187426266.1666042766.CjwKCAjw-rOaBhA9EiwAUkLV4sLp0fpNzumcF74W1IrOYcNjOsN-zx0Pb0-aO9Fc0eOQ6hUHNPASFRoCnMoQAvD_BwE) I took this design from him.
