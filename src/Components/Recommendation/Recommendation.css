@@ -52,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 10px;
   margin-top: 20px;
   width: 100%;
   position: relative;
@@ -147,6 +147,7 @@
     padding: 0 3%;
     box-sizing: border-box;
     flex-wrap: nowrap;
+    gap: 2%;
   }
 
   .recommendation .recommendation-container button:first-of-type {
