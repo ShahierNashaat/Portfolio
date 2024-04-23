@@ -119,7 +119,7 @@
 .recommendation .recommendation-container .recommendation-cards .recommendation-card img {
   position: absolute;
   top: -60px;
-  left: calc(50% - 50px);
+  left: calc(50% - 56px);
   border-radius: 50%;
   border: 3px solid #72e2ae;
   display: block;
