@@ -46,7 +46,7 @@ function Header() {
   return (
     <header ref={headerRef}>
       <button onClick={scrollUp} className="home-link" type="button">
-        SHAHIER
+        SHAHIR
         <span className="dot">.</span>
       </button>
       <button className="open-menu" onClick={openMenu} type="button">

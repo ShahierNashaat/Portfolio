@@ -13,7 +13,7 @@ function Headline() {
   useEffect(() => {
     const textLoad = () => {
       setTimeout(() => {
-        primaryText.current.textContent = 'Shahier Nashaat';
+        primaryText.current.textContent = 'Shahir Nashaat';
       }, 0);
       setTimeout(() => {
         primaryText.current.innerText = 'a Back End Developer';
@@ -33,7 +33,7 @@ function Headline() {
         <h1>
           <span className="greeting">Hi, I am </span>
           <br />
-          <span className="primary-text" ref={primaryText}>Shahier Nashaat</span>
+          <span className="primary-text" ref={primaryText}>Shahir Nashaat</span>
         </h1>
         <p>
           I can help you build a product, feature or website
