@@ -16,17 +16,11 @@ function Headline() {
         primaryText.current.textContent = 'Shahier Nashaat';
       }, 0);
       setTimeout(() => {
-        primaryText.current.innerText = 'Full Stack Developer';
+        primaryText.current.innerText = 'a Back End Developer';
       }, 5000);
-      setTimeout(() => {
-        primaryText.current.innerText = 'Front End Developer';
-      }, 10000);
-      setTimeout(() => {
-        primaryText.current.innerText = 'Back End Developer';
-      }, 15000);
     };
     textLoad();
-    setInterval(textLoad, 20000);
+    setInterval(textLoad, 10000);
   }, []);
 
   return (
