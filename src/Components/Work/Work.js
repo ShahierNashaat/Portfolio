@@ -2,6 +2,11 @@ import './Work.css';
 import projects from '../../data/projects.json';
 
 function Work() {
+  const openSourceCodeLinks = (links) => {
+    links.forEach((link) => {
+      window.open(link);
+    });
+  };
   return (
     <div className="work" id="work">
       <div className="title">
@@ -23,9 +28,9 @@ function Work() {
                   <i className="fas fa-circle-notch" />
                 </a>
                 )}
-                <a className="source-button" href={project.linkToSource} target="_blank" rel="noreferrer">
-                  <i className="fab fa-github" />
-                </a>
+                <button className="source-button" type="button" onClick={() => openSourceCodeLinks(project.linkToSource)} target="_blank" rel="noreferrer">
+                  <i className="fa-brands fa-github fa-2x" />
+                </button>
               </div>
             </div>
             <h3>{project.name}</h3>

@@ -84,7 +84,8 @@
   left: 0;
 }
 
-.work .work-cards .work-card .project-image .live-source-icons a {
+.work .work-cards .work-card .project-image .live-source-icons a,
+.work .work-cards .work-card .project-image .live-source-icons button i {
   border-radius: 50%;
   padding: 10px;
   text-decoration: none;
@@ -95,6 +96,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.work .work-cards .work-card .project-image .live-source-icons button {
+  border: 0;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .work .work-cards .work-card h3 {
